@@ -3,13 +3,17 @@ ways_of_saying_you_are_welcome = [
   "you're welcome"
   "my pleasure",
   "sure thing",
-  "np"
+  "np",
+  "it's cool",
+  "no worries",
+  "any time",
+  "don't mention it"
 ]
 
 module.exports = (robot) ->
 
-  robot.hear /(thanks?|ty|thx).*roy/i, (msg) ->
+  robot.hear /(?:thank(?:s| you)|ty|thx).*roy/i, (msg) ->
     msg.send msg.random ways_of_saying_you_are_welcome
 
-  robot.respond /(thanks?|ty|thx).*/i, (msg) ->
+  robot.respond /thank(?:s| you)|ty|thx/i, (msg) ->
     msg.send msg.random ways_of_saying_you_are_welcome
