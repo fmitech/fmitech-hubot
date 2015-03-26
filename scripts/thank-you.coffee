@@ -1,4 +1,4 @@
-ways_of_saying_thanks = [
+ways_of_saying_you_are_welcome = [
   "no problem",
   "you're welcome"
   "my pleasure",
@@ -8,8 +8,8 @@ ways_of_saying_thanks = [
 
 module.exports = (robot) ->
 
-  robot.hear /(thanks?|ty).*roy/i, (msg) ->
-    msg.send msg.random ways_of_saying_thanks
+  robot.hear /(thanks?|ty|thx).*roy/i, (msg) ->
+    msg.send msg.random ways_of_saying_you_are_welcome
 
-  robot.respond /(thanks?|ty).*/i, (msg) ->
-    msg.send msg.random ways_of_saying_thanks
+  robot.respond /(thanks?|ty|thx).*/i, (msg) ->
+    msg.send msg.random ways_of_saying_you_are_welcome
