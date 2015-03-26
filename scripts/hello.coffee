@@ -7,7 +7,7 @@ ways_of_saying_hello = [
   "howdy"
 ]
 
-respond_regex = new RegExp("(?:" + ways_of_saying_hello.join("|") + ")", "i")
+respond_regex = new RegExp("(?:\\b" + ways_of_saying_hello.join("\\b|\\b") + "\\b)", "i")
 hear_regex    = new RegExp(respond_regex.source + ".*roy")
 
 module.exports = (robot) ->
