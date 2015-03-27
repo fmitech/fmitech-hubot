@@ -8,7 +8,7 @@ ways_of_saying_hello = [
 ]
 
 respond_regex = new RegExp("(?:\\b" + ways_of_saying_hello.join("\\b|\\b") + "\\b)", "i")
-hear_regex    = new RegExp(respond_regex.source + ".*roy")
+hear_regex    = new RegExp(respond_regex.source + ".*roy", "i")
 
 module.exports = (robot) ->
 
