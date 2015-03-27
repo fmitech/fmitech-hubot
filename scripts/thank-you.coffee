@@ -12,8 +12,8 @@ ways_of_saying_you_are_welcome = [
 
 module.exports = (robot) ->
 
-  robot.hear /(?:thank(?:s| you)|ty|thx).*roy/i, (msg) ->
+  robot.hear /(?:\bthank(?:s| you)\b|\bty\b|\bthx\b).*\broy\b/i, (msg) ->
     msg.send msg.random ways_of_saying_you_are_welcome
 
-  robot.respond /thank(?:s| you)|ty|thx/i, (msg) ->
+  robot.respond /\bthank(?:s| you)\b|\bty\b|\bthx\b/i, (msg) ->
     msg.send msg.random ways_of_saying_you_are_welcome
