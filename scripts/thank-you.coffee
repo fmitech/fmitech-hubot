@@ -7,7 +7,8 @@ ways_of_saying_you_are_welcome = [
   "it's cool",
   "no worries",
   "any time",
-  "don't mention it"
+  "don't mention it",
+  "yeah,....right."
 ]
 
 module.exports = (robot) ->
