@@ -11,7 +11,8 @@ ways_of_saying_i_love_you_too = [
   "i \<3 you too",
   "\<3 you too",
   "i \<3 u 2",
-  "\<3 u 2"
+  "\<3 u 2",
+  "i like you too."
 ]
 
 respond_regex = new RegExp("(?:\\b" + ways_of_saying_i_love_you.join("\\b|\\b") + "\\b)", "i")
